@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard | GKlass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="196x196" href="images/favicon-192.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="css/styles.css" />
+    
+</head>
+
+<body>
+    <nav style="padding:0" class="navbar navbar-expand-sm bg-info navbar-dark">
+            <a class="navbar-brand" href="#" id="navbtn">&nbsp; &nbsp; &#9776; <img src="images/logo.png" style="max-width: 100px;"/></a>
+
+        <form class="form-inline" action="" class="ml-auto">
+            <input class="form-control form-control-sm mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-dark btn-sm" type="submit">Search</button>
+        </form>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto right-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="popover" data-html="true" title="Select Standard"
+                        data-content="
+              <div class='container-fluid std-container'>
+              <ul class='list-group'>
+                <li class='list-group-item'><input type='radio' name='std'> std 1</li>
+                <li class='list-group-item'><input type='radio' name='std'> std 2</li>
+                <li class='list-group-item'><input type='radio' name='std'> std 3</li>
+                <li class='list-group-item'><input type='radio' name='std'> std 4</li>
+                <li class='list-group-item'><input type='radio' name='std'> std 5</li>
+                <li class='list-group-item'><input type='radio' name='std'> std 6</li>
+                <li class='list-group-item'><input type='radio' name='std'> std 7</li>
+                <li class='list-group-item'><input type='radio' name='std'> std 8</li>
+                <li class='list-group-item'><input type='radio' name='std'> std 9</li>
+                <li class='list-group-item'><input type='radio' name='std'> std 1</li>
+            </ul></div>"><i
+                            class="fas fa-atlas"></i>
+
+                    </a>
+                </li>
+                <li class="nav-item" class="bmarklink">
+                    <a class="nav-link"  href="#"><i class="fas fa-bookmark"><span class="bmark">1</span></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+
+    <div class="container-fluid" style="min-height: 100%">
+        <div class="row">
+
+            <div class="col-md-2 bg-info sidemenu">
+                <!-- <img src="images/company-logo.png" class="img-fluid" style="background-color: #ffffff;padding: 1em;border-right:5px solid #5bc0de"/>     -->
+                <div class="dropdown">
+                            <button type="button" class="btn btn-block btn-info dropdown-toggle" style="background-color: rgba(255, 255, 255, 0.2);border:none;" data-toggle="dropdown">
+                              Welcome, Dnyaneshwar
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Your Profile</a>
+                              <a class="dropdown-item" href="#"><i class="fas fa-download"></i> Your Subscription</a>
+                              <a class="dropdown-item" href="#"><i class="fas fa-arrows-alt-h"></i> Switch Medium</a>
+                              <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Log Off</a>
+                            </div>
+                          </div>
+                <nav>
+                    <ul>
+                        <li><i class="fas fa-home"></i> &nbsp; Dashboard</li>
+                        <li><i class="fas fa-chart-bar"></i> &nbsp; Reports</li>
+                        <li><i class="fas fa-puzzle-piece"></i> &nbsp; Manage Addons</li>
+                        <li><i class="fas fa-cog"></i> &nbsp; Settings</li>
+                        <li><i class="fas fa-question-circle"></i> &nbsp; Support</li>
+                        <li><i class="fas fa-users"></i> &nbsp; Manage Users</li>
+                        <li><i class="fas fa-credit-card"></i> &nbsp; Subscribe</li>
+                        <li><i class="fas fa-comment-alt"></i> &nbsp; Feedback</li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-10" id="main">
+                    <div class="row" style="padding:2em;">
+                        <div class="col-md-4" style="text-align: center;">
+                            <button class="btn btn-lg btn-info btn-start-learning">Start Learning <i class="fas fa-arrow-circle-right"></i></button><br><br>
+                            <button class="btn btn-lg btn-info btn-start-learning"><span>Start Learning<br><span>(From last session)</span><i class="fas fa-arrow-circle-right"></i></span></button>
+                        </div>
+                            <div class="col-md-4">
+                                <h3>Bar Chart</h3>
+                                <canvas id="myChart"></canvas>
+                
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Progress</h3><hr>
+                                <h6>3/10 Subjects Completed</h6>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger progress-bar-striped" style="width:30%"></div>
+                                </div>
+                                <br>
+                                <h6>4/10 Chapters Completed</h6>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success progress-bar-striped" style="width:40%"></div>
+                                </div>
+                                <br>
+                                <h6>5/10 Topics Completed</h6>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info progress-bar-striped" style="width:50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card bg-info">
+                                    <div class="card-header">
+                                        <h4><small><i class="fas fa-superscript"></i></small> Maths
+                                            <a href="#" class="card-right-icon"><span><i class="fas fa-book-reader"></i></span></a>
+                                            
+                                        </h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <button class="btn progress-circle">0 %</button>
+                                        <button class="btn btn-block btn-info btn-start">Start <i class="fas fa-arrow-circle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card bg-info">
+                                    <div class="card-header">
+                                        <h4><small><i class="fas fa-flask"></i></small> Science
+                                            <a href="#" class="card-right-icon"><span><i class="fas fa-book-reader"></i></span></a>
+                                            
+                                        </h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <button class="btn progress-circle">0 %</button>
+                                        <button class="btn btn-block btn-info btn-start">Start <i class="fas fa-arrow-circle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card bg-info">
+                                    <div class="card-header">
+                                        <h4><small><i class="fas fa-history"></i></small> History
+                                            <a href="#" class="card-right-icon"><span><i class="fas fa-book-reader"></i></span></a>
+                                            
+                                        </h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <button class="btn progress-circle">0 %</button>
+                                        <button class="btn btn-block btn-info btn-start">Start <i class="fas fa-arrow-circle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card bg-info">
+                                    <div class="card-header">
+                                        <h4><small><i class="fas fa-cubes"></i></small> Civics
+                                            <a href="#" class="card-right-icon"><span><i class="fas fa-book-reader"></i></span></a>
+                                            
+                                        </h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <button class="btn progress-circle">0 %</button>
+                                        <button class="btn btn-block btn-info btn-start">Start <i class="fas fa-arrow-circle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

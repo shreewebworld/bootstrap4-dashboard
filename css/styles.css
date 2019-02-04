@@ -1,0 +1,132 @@
+body {
+    font-family: Century Gothic;
+  }
+
+
+  .card{
+      border-radius: 0px;
+      margin-top: 0.5em;
+  }
+  .btn{
+      border-radius: 0px;
+  }
+  .btn-start{
+      border-radius: 1em;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin-top: 2em;
+      transition: 0.3s linear all;
+      /* text-shadow: 2px 2px 2px black; */
+      font-weight: 500;
+      color: #000000;
+  }
+  .btn-start:hover{
+        text-indent: 0.7em;
+        
+  }
+  .form-control{
+      border-radius: 0px;
+  }
+  .card-header {
+      color: white;
+  }
+  .card-right-icon{
+      float: right;
+      color: #ffffff;
+      transition: 0.2s linear all;
+  }
+  .card-right-icon:hover{
+    text-shadow: 2px 2px 2px #111;
+    color: white;
+}
+  .card-body{
+      text-align: center;
+  }
+  .progress-circle{
+    color: #ffffff;
+    padding: 0.5em;
+    height: 3em;
+    width: 3em;
+    font-size: 2em;
+    border-radius: 100%;
+    border: 5px solid white;
+    background-color: rgba(255,255,255, 0.5);
+    transition: 0.2s linear all;
+    text-shadow: 2px 2px 4px #111;
+  }
+  .progress-circle:hover{
+      /* font-weight: 900; */
+      border:0px solid white;
+      padding: 0em;
+  }
+
+  .right-menu li a i{
+      color: #ffffff;
+      font-size: 1.5em;
+  }
+  .std-container{
+    max-height: 10em;
+    overflow: auto;
+    padding: 0px;
+    margin: 0px;
+  }
+  .sidemenu{
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+  }
+  .sidemenu ul{
+    list-style-type: none;
+    overflow: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .sidemenu ul li{
+    color: #ffffff;
+    width:100%;
+    margin: 0px;
+    padding: 1em;
+    transition: 0.2s linear all;
+    cursor: pointer;
+  }
+  .sidemenu ul li:hover{
+      background-color: black;
+      padding-left: 1.5em;
+      
+  }
+  .fa-bookmark{
+    position: relative;
+  }
+  .bmark{
+      position: absolute;
+      top:-10px;
+      left:5px;
+      background-color: brown;
+      height: 1.5em;
+      width:1.5em;
+      border-radius: 100%;
+      color: white;
+      font-size: 0.5em;
+      text-align: center;
+      padding: 2px;
+  }
+  .btn-start-learning{
+      height: 4em;
+      width: 14em;
+      border-radius: 2em;
+      transition: 0.3s linear all;
+  }
+  .btn-start-learning:hover{
+    background-color: white;
+    text-indent: 1em;
+    color: #4093ac;
+  }
+  #main{
+      transition: 1s linear all;
+  }
+.searchbox{
+    transition: 0.3s linear all;
+}
+.searchbox:focus{
+    width:120%;
+}
